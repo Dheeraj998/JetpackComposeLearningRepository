@@ -21,15 +21,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            val navController= rememberNavController()
-              NavHost(navController = navController, startDestination = Routes.screenA, builder = {
-                  composable( Routes.screenA) {
-                      TestScreen(navController)
-                  }
-                  composable( Routes.screenB) {
-                      TestBScreen()
-                  }
-              })
+            MyAppNavigation()
 //            JetpackComposeLearningTheme {
 //                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 //                   TestScreen(Modifier.padding(innerPadding))

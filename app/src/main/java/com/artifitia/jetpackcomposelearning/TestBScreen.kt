@@ -1,12 +1,22 @@
 package com.artifitia.jetpackcomposelearning
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 
 @Composable
-fun TestBScreen(name:String) {
-    
-    Text(text = "test B")
+fun TestBScreen(name: String) {
+
+    Column(
+        modifier = Modifier.fillMaxHeight(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        Text(text = "test B $name")
+    }
 }
