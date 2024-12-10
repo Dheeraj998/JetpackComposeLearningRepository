@@ -19,9 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeLearningTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                   TestScreen(Modifier.padding(innerPadding))
-                }
+                MainScreen()
             }
         }
     }

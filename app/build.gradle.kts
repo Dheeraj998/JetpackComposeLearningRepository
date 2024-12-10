@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.artifitia.jetpackcomposelearning"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.artifitia.jetpackcomposelearning"
